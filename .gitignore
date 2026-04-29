@@ -1,0 +1,13 @@
+.env
+.env.*
+bin/
+dist/
+tmp/
+coverage.out
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.exe
+*.test
