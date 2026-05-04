@@ -167,10 +167,12 @@ const docTemplate = `{
             "properties": {
                 "new_password": {
                     "type": "string",
-                    "minLength": 8
+                    "minLength": 8,
+                    "example": "New@password123"
                 },
                 "old_password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "password123"
                 }
             }
         },
@@ -182,10 +184,12 @@ const docTemplate = `{
             ],
             "properties": {
                 "email": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "admin@example.com"
                 },
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "password123"
                 }
             }
         },
@@ -198,11 +202,13 @@ const docTemplate = `{
             "properties": {
                 "email": {
                     "type": "string",
-                    "maxLength": 50
+                    "maxLength": 50,
+                    "example": "admin2@example.com"
                 },
                 "password": {
                     "type": "string",
-                    "minLength": 8
+                    "minLength": 8,
+                    "example": "password123"
                 }
             }
         },

@@ -3,9 +3,11 @@ definitions:
   hyweb-api_internal_model.ChangePasswordRequest:
     properties:
       new_password:
+        example: New@password123
         minLength: 8
         type: string
       old_password:
+        example: password123
         type: string
     required:
     - new_password
@@ -14,8 +16,10 @@ definitions:
   hyweb-api_internal_model.LoginRequest:
     properties:
       email:
+        example: admin@example.com
         type: string
       password:
+        example: password123
         type: string
     required:
     - email
@@ -24,9 +28,11 @@ definitions:
   hyweb-api_internal_model.RegisterRequest:
     properties:
       email:
+        example: admin2@example.com
         maxLength: 50
         type: string
       password:
+        example: password123
         minLength: 8
         type: string
     required:

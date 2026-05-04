@@ -74,7 +74,7 @@ MYSQL_PORT=3306
 MYSQL_DATABASE=hyweb_db
 MYSQL_USER=api_user
 MYSQL_PASSWORD=api_password
-JWT_SECRET=change_me_secret_key
+JWT_SECRET=QmFhU1NlY3JldEtleUluTWFuZUEzMjhCaXRzX1NhZmVGb3JfSFMjMjU2
 JWT_EXPIRE_HOURS=24
 ```
 
@@ -213,8 +213,8 @@ curl -X POST http://localhost:8080/api/v1/users/register \
 curl -X POST http://localhost:8080/api/v1/users/login \
   -H "Content-Type: application/json" \
   -d '{
-    "email": "newuser@example.com",
-    "password": "P@ssw0rd123"
+    "email": "admin@example.com",
+    "password": "password123"
   }'
 ```
 
@@ -227,7 +227,7 @@ curl -X PUT http://localhost:8080/api/v1/users/password \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <your-jwt-token>" \
   -d '{
-    "old_password": "P@ssw0rd123",
+    "old_password": "password123",
     "new_password": "NewP@ssw0rd123"
   }'
 ```

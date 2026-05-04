@@ -30,7 +30,7 @@ WORKDIR /root/
 # 從 builder 階段複製編譯好的執行檔
 COPY --from=builder /app/main .
 # 複製 Swagger 文件目錄與 .env 檔
-COPY --from=builder /app/cmd/server/docs ./docs
+COPY --from=builder /app/docs ./docs
 COPY --from=builder /app/.env .
 
 # 暴露 Gin 預設的 8080 埠號
